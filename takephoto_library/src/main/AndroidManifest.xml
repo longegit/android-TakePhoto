@@ -8,8 +8,8 @@
     <application android:allowBackup="true">
         <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
         <provider
-            android:name="android.support.v4.content.FileProvider"
-            android:authorities="org.devio.takephoto.provider.TakePhotoFileProvider"
+            android:name=".provider.TakePhotoFileProvider"
+            android:authorities="${applicationId}.FileProvider"
             android:grantUriPermissions="true"
             android:exported="false">
             <meta-data
